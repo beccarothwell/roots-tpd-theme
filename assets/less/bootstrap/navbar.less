@@ -14,6 +14,8 @@
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
   border: 1px solid transparent;
+  font-family: @font-family-header;
+  font-size: @font-size-large;
 
   // Prevent floats from breaking the navbar
   .clearfix();
@@ -150,7 +152,7 @@
 .navbar-brand {
   float: left;
   padding: @navbar-padding-vertical @navbar-padding-horizontal;
-  font-size: @font-size-large;
+  font-size: @font-size-extra-large;
   line-height: @line-height-computed;
   &:hover,
   &:focus {
