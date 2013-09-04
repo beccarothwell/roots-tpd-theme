@@ -243,7 +243,7 @@
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-default-color:             #fff;
-@navbar-default-bg:                #000;
+@navbar-default-bg:                #f8f8f8;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
@@ -251,11 +251,13 @@
 @navbar-font-family:				@font-family-header;
 
 // Navbar links
-@navbar-default-link-color:                #fff;
-@navbar-default-link-hover-color:          #333;
+@navbar-default-link-color:                #777;
+@navbar-default-link-hover-color:          #000;
 @navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-unfocused-color:      lighten(@navbar-default-link-color, 30%);
+@navbar-default-link-unfocused-bg:         transparent;
 @navbar-default-link-active-color:         #555;
-@navbar-default-link-active-bg:            lighten(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -281,6 +283,8 @@
 @navbar-inverse-link-color:                 @gray-light;
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-unfocused-color:       darken(@navbar-inverse-link-color, 30%);
+@navbar-inverse-link-unfocused-bg:          transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
 @navbar-inverse-link-disabled-color:        #444;

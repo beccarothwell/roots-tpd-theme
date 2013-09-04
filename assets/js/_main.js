@@ -5,7 +5,15 @@ var ExampleSite = {
   // All pages
   common: {
     init: function() {
-      // JS here
+	$(document).ready(function(){
+	$('.navbar-nav li').mouseenter(function() {
+	$('.navbar-nav li').not(this).addClass("unfocused");
+	$(this).addClass("focused");
+    });
+	$('.navbar-nav li').mouseleave(function() {
+	$('.navbar-nav li').removeClass("focused unfocused");
+	});
+	});// JS here
     },
     finalize: function() { }
   },
