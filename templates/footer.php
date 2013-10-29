@@ -1,6 +1,6 @@
-<footer class="content-info container" role="contentinfo">
+<footer class="content-info" role="contentinfo">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12 container">
       <?php dynamic_sidebar('sidebar-footer'); ?>
       <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
     </div>

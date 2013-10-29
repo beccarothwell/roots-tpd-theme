@@ -20,11 +20,11 @@ var ExampleSite = {
   // Home page
   home: {
     init: function() {
-    $(document).ready(function(){
-    $('.carousel').carousel('pause');
-	$(".carousel-indicators li:first").addClass("active");
-	$(".carousel-inner .item:first").addClass("active");
-	});	// JS here
+		$(document).ready(function(){
+			$('.carousel').carousel('pause');
+			$(".carousel-indicators li:first").addClass("active");
+			$(".carousel-inner .item:first").addClass("active");
+		});	// JS here
     }
   },
   // About page

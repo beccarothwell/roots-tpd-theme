@@ -32,7 +32,24 @@ body { }
    Primary Content
    ========================================================================== */
 
-.main { }
+.main {
+
+	#video-carousel {
+		.make-xs-column (8);
+		float:none;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom: 30px;
+	
+		.carousel-caption {
+			position: relative;
+			right: 0;
+			left: 0;
+			padding-bottom: 0;
+		}
+	}
+	
+}
 
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
@@ -62,8 +79,11 @@ body { }
 /* ==========================================================================
    Footer
    ========================================================================== */
-
-.content-info { }
+   
+.content-info {
+background: @gray-darker;
+color: @gray-lighter;
+}
 
 
 
