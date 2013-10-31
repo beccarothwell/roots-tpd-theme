@@ -21,9 +21,15 @@ var ExampleSite = {
   home: {
     init: function() {
 		$(document).ready(function(){
-			$('.carousel').carousel('pause');
+			/*$('.carousel').carousel('pause');
 			$(".carousel-indicators li:first").addClass("active");
-			$(".carousel-inner .item:first").addClass("active");
+			$(".carousel-inner .item:first").addClass("active");*/
+			$('.flexslider').flexslider({
+				animation: "fade",
+				slideshow: false,
+				video: true,
+				animationLoop: true,
+			});
 		});	// JS here
     }
   },

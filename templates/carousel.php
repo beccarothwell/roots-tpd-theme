@@ -25,7 +25,7 @@ $number = 0;
 		// Proceed only if published posts exist
 		if ( $featured->have_posts() ) : ?>
 		
-<div id="video-carousel" class="carousel slide">
+<div id="video-carousel" class="carousel slide carousel-fade">
   <!-- Indicators -->
   <ol class="carousel-indicators">
   <?php while ( $featured->have_posts() ) : $featured->the_post(); ?>
